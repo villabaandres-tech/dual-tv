@@ -9,10 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: DualSubTV
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,18 +22,18 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Gradle wrapper
+      - name: Download real Gradle wrapper
         run: |
-          gradle wrapper --gradle-version 8.0
-        working-directory: DualSubTV
-        env:
-          GRADLE_USER_HOME: /root/.gradle
-
-      - name: Grant execute permission to gradlew
-        run: chmod +x gradlew
+          cd DualSubTV
+          curl -L https://services.gradle.org/distributions/gradle-8.0-bin.zip -o gradle-bin.zip
+          unzip -o gradle-bin.zip
+          ./gradle-8.0/bin/gradle wrapper --gradle-version 8.0
+          chmod +x gradlew
 
       - name: Build debug APK
-        run: ./gradlew assembleDebug
+        run: |
+          cd DualSubTV
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
