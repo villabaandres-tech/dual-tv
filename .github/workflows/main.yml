@@ -26,6 +26,13 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Install Gradle wrapper
+        run: |
+          gradle wrapper --gradle-version 8.0
+        working-directory: DualSubTV
+        env:
+          GRADLE_USER_HOME: /root/.gradle
+
       - name: Grant execute permission to gradlew
         run: chmod +x gradlew
 
