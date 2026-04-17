@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvGroupName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Grupo"
+    android:textColor="@color/text_primary"
+    android:textSize="15sp"
+    android:paddingStart="16dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:maxLines="2"
+    android:ellipsize="end"/>

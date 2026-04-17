@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <rect
+        android:fillColor="#0A0A0A"
+        android:rectLeft="0"
+        android:rectTop="0"
+        android:rectRight="320"
+        android:rectBottom="180"/>
+    <!-- Play icon -->
+    <path
+        android:fillColor="#1E88E5"
+        android:pathData="M30,50 L70,90 L30,130 Z"/>
+    <!-- App name text area -->
+    <rect
+        android:fillColor="#1E88E5"
+        android:rectLeft="90"
+        android:rectTop="60"
+        android:rectRight="300"
+        android:rectBottom="80"/>
+    <rect
+        android:fillColor="#333"
+        android:rectLeft="90"
+        android:rectTop="90"
+        android:rectRight="280"
+        android:rectBottom="105"/>
+    <!-- Dual subtitle lines -->
+    <rect
+        android:fillColor="#FFE066"
+        android:rectLeft="10"
+        android:rectTop="148"
+        android:rectRight="310"
+        android:rectBottom="155"/>
+    <rect
+        android:fillColor="#FFFFFF"
+        android:rectLeft="10"
+        android:rectTop="160"
+        android:rectRight="250"
+        android:rectBottom="167"/>
+</vector>

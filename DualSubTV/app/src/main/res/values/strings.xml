@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DualSub TV</string>
+    <string name="enter_url">Ingresar URL del video</string>
+    <string name="browse_local">Explorar archivos locales</string>
+    <string name="subtitle_1">Subtítulo 1</string>
+    <string name="subtitle_2">Subtítulo 2</string>
+    <string name="select_subtitle">Seleccionar subtítulo</string>
+    <string name="none">Ninguno</string>
+    <string name="play">Reproducir</string>
+    <string name="url_hint">https://... o ruta local</string>
+    <string name="sub1_hint">Ruta o URL del subtítulo 1 (opcional)</string>
+    <string name="sub2_hint">Ruta o URL del subtítulo 2 (opcional)</string>
+    <string name="embedded">Incrustado en video</string>
+    <string name="external_file">Archivo externo</string>
+</resources>
